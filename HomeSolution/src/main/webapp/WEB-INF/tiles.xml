@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+   "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+   "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+   <definition name="baseLayout" template="/BaseLayout.jsp">
+      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="header"  value="/Header.jsp"/>
+      <put-attribute name="leftMargin" value="/LeftMargin.jsp"/>
+      <put-attribute name="rightMargin" value="/RightMargin.jsp"/>
+      <put-attribute name="banner" value="/Banner.jsp"/>
+      <put-attribute name="menu"   value="/Menu.jsp"/>
+      <put-attribute name="body"   value="/Body.jsp"/>
+      <put-attribute name="footer"   value="/Footer.jsp"/>
+   </definition>
+   <definition name="registrationLayout" template="/RegistrationLayout.jsp">
+      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="leftMargin" value="/LeftMargin.jsp"/>
+      <put-attribute name="rightMargin" value="/RightMargin.jsp"/>
+      <put-attribute name="banner" value="/Banner.jsp"/>
+      <put-attribute name="menu"   value="/Menu.jsp"/>
+      <put-attribute name="body"   value="/Body.jsp"/>
+      <put-attribute name="footer"   value="/Footer.jsp"/>
+   </definition>
+
+   <definition name="customer-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Customer"/>
+      <put-attribute name="body"   value="/pages/customer.jsp"/>      
+   </definition>
+
+   <definition name="shopping-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Shopping"/>
+      <put-attribute name="body"   value="/pages/Shopping.jsp"/>      
+   </definition>
+   <definition name="shoppinglist-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Shopping List"/>
+      <put-attribute name="body"   value="/pages/ShoppingList.jsp"/>      
+   </definition>
+   <definition name="contactus-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="ContactUs"/>
+      <put-attribute name="body"   value="/pages/ContactUs.jsp"/>      
+   </definition>
+   <definition name="aboutus-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="AboutUs"/>
+      <put-attribute name="body"   value="/pages/AboutUs.jsp"/>      
+   </definition>
+   <definition name="customerregistration-tiles" extends="registrationLayout">
+      <put-attribute name="title"  value="Customer Registration"/>
+      <put-attribute name="body"   value="/pages/customerRegistration.jsp"/>      
+   </definition>
+   <definition name="personaldetails-tiles" extends="registrationLayout">
+      <put-attribute name="title"  value="Personal Details"/>
+      <put-attribute name="body"   value="/pages/CustomerDetails.jsp"/>      
+   </definition>
+   <definition name="forgotpassword-tiles" extends="registrationLayout">
+      <put-attribute name="title"  value="Forgot Password"/>
+      <put-attribute name="body"   value="/pages/forgotPassword.jsp"/>      
+   </definition>
+   <definition name="bills-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Bills"/>
+      <put-attribute name="body"   value="/pages/Bills.jsp"/>      
+   </definition>
+   
+   <definition name="payment-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Payment"/>
+      <put-attribute name="body"   value="/pages/Payment.jsp"/>      
+   </definition>
+   <definition name="newspaperbill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Newspaper Bill"/>
+      <put-attribute name="body"   value="/pages/NewspaperBill.jsp"/>      
+   </definition>
+   <definition name="magzinebill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Magzine Bill"/>
+      <put-attribute name="body"   value="/pages/MagzineBill.jsp"/>      
+   </definition>
+   <definition name="electricbill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Electric Bill"/>
+      <put-attribute name="body"   value="/pages/ElectricBill.jsp"/>      
+   </definition>
+   <definition name="phoneMobilebill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Phone/Mobile Bill"/>
+      <put-attribute name="body"   value="/pages/PhoneMobileBill.jsp"/>      
+   </definition>
+   <definition name="internetbill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Internet Bill"/>
+      <put-attribute name="body"   value="/pages/InternetBill.jsp"/>      
+   </definition>
+    <definition name="cookinggasbill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="CookingGas Bill"/>
+      <put-attribute name="body"   value="/pages/CookingGasBill.jsp"/>      
+   </definition>
+    <definition name="pipedwatersupplybill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="PipedWaterSupply Bill"/>
+      <put-attribute name="body"   value="/pages/PipedWaterSupplyBill.jsp"/>      
+   </definition>
+    <definition name="bottledwatersupplybill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="BottledWaterSupply Bill"/>
+      <put-attribute name="body"   value="/pages/BottledWaterSupplyBill.jsp"/>      
+   </definition>
+    <definition name="milksupplbyill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="MilkSupply Bill"/>
+      <put-attribute name="body"   value="/pages/MilkSupplyBill.jsp"/>      
+   </definition>
+    <definition name="creditcardbill-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="CreditCard Bill"/>
+      <put-attribute name="body"   value="/pages/CreditCardBill.jsp"/>      
+   </definition>
+    <definition name="savingpolicypremium-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="SavingPolicy Premium"/>
+      <put-attribute name="body"   value="/pages/SavingPolicyPremium.jsp"/>      
+   </definition>
+    <definition name="insurancepremium-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Insurance Premium"/>
+      <put-attribute name="body"   value="/pages/InsurancePremium.jsp"/>      
+   </definition>
+    <definition name="loanpremium-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Loan Premium"/>
+      <put-attribute name="body"   value="/pages/LoanPremium.jsp"/>      
+   </definition>
+    <definition name="service-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Service"/>
+      <put-attribute name="body"   value="/pages/Service.jsp"/>      
+   </definition>
+   <definition name="healthcheckup-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Health CheckUp"/>
+      <put-attribute name="body"   value="/pages/HealthCheckUp.jsp"/>      
+   </definition>
+   <definition name="rwacharges-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="RWA Charges"/>
+      <put-attribute name="body"   value="/pages/RWACharges.jsp"/>      
+   </definition>
+   <definition name="tutionfees-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Tution Fees"/>
+      <put-attribute name="body"   value="/pages/TutionFees.jsp"/>      
+   </definition>
+   <definition name="tvrecharge-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="TV Recharge"/>
+      <put-attribute name="body"   value="/pages/TVRecharge.jsp"/>      
+   </definition>
+   
+   <definition name="home-tiles" extends="baseLayout">
+      <put-attribute name="title"  value="Home"/>
+      <put-attribute name="body"   value="/pages/Home.jsp"/>      
+   </definition>
+	</tiles-definitions>

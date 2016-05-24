@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+		<class name="com.myhome.model.LoanPremium" 
+			table="loanpremium" catalog="homemgmt">
+	        <id name="loanpremiumID" type="java.lang.Long">
+	            <column name="loanpremium_id" />
+	        </id>
+	        
+	    <!-- <property name="company" type="string">
+            <column name="company_name" length="25"  not-null="true" />
+         </property> 
+                         -->
+        <property name="loantype" type="string">
+            <column name="loan_type" length="25" not-null="true" />
+        </property>
+         
+        <property name="loanname" type="string">
+            <column name="loan_name" length="25" not-null="true" />
+        </property> 
+        
+        <property name="loanpremium" type="int">
+            <column name="loan_premium" not-null="true" />
+        </property>
+        
+        <property name="loannumber" type="int">
+            <column name="loan_number" not-null="true" />
+        </property>
+        
+        <property name="other" type="string">
+            <column name="other_loan" length="100" not-null="true" />
+        </property>
+                                                                          
+        <property name="duedate" type="date">
+            <column name="due_date" not-null="true" />
+        </property>
+              
+        <property name="makemeremind" type="string">
+            <column name="makemeremind" length="100" not-null="true" />
+        </property>
+        
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property> 
+        
+        <one-to-one name="bank" class="com.myhome.model.Bank" cascade="all"></one-to-one>
+        
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        <one-to-one name="stateCounty" class="com.myhome.model.StateCounty" cascade="all"></one-to-one>
+        
+        <many-to-one name="customer" class="com.myhome.model.Customer" cascade="all" not-null="true"></many-to-one>
+        
+        </class>
+</hibernate-mapping>
+        
+                
+        
+      
+		

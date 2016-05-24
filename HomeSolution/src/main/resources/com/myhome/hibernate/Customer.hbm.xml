@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="com.myhome.model.Customer" 
+		table="customer" catalog="homemgmt">
+        <id name="customerId" type="java.lang.Long">
+            <column name="customer_id" />
+            <generator class="identity" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="first_name" length="45" not-null="true" />
+        </property>
+        <property name="familyName" type="string">
+            <column name="family_name" length="45" not-null="true" />
+        </property>
+        <!-- <property name="address" type="string">
+            <column name="address" not-null="true" />
+        </property> -->
+         
+        <property name="gender" type="string">
+            <column name="gender" length="6" not-null="true" />
+        </property>
+        <property name="createdDate" type="timestamp">
+            <column name="created_date" length="19" not-null="true" />
+        </property>
+        <property name="lastUpdated" type="timestamp">
+            <column name="last_updated" length="19" not-null="false" />
+        </property>
+        <property name="dob" type="date">
+            <column name="dob" length="19" not-null="true" />
+        </property>
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" />
+        </property>
+        
+        <one-to-one name="address" class="com.myhome.model.Address" cascade="all"></one-to-one>
+    </class>
+</hibernate-mapping>

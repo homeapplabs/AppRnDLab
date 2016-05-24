@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.myhome.model.NewsAgency" 
+			table="news_agency" catalog="homemgmt">
+	        <id name="newsAgencyCode" type="java.lang.Long">
+	            <column name="news_agency_code" />
+	        </id>
+	        
+	        <property name="newsAgencyName" type="string">
+            <column name="news_agency_name" length="25"  not-null="true" />
+         </property> 
+                        
+        
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property> 
+       
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        </class>
+</hibernate-mapping>

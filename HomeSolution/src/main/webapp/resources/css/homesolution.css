@@ -1,0 +1,57 @@
+/*!
+ * Datepicker for Bootstrap
+ *
+ * Copyright 2012 Stefan Petre
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ */
+*, html , h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding: 0px;
+}
+* {
+    -moz-box-sizing: content-box;
+}
+body {
+	background: #fff;
+}
+img {
+    max-width: 100%;
+}
+/*******Header*******/
+header{
+	background:#286090;
+	color:#fff;
+}
+.homesolution-header-content{
+	width: 980px;
+	margin: 0px auto;
+	height: 70px;
+}
+header .homesolution-pnr-logo{
+	border-bottom: 3px solid #cd0001;
+	background: none repeat scroll 0% 0% rgb(255, 255, 255);
+	position: absolute;
+	height: 80px;
+	width: 211px;
+	top:-5px;
+}
+header .homesolution-title{
+	color: rgb(255, 255, 255);
+	font-size: 29px;
+	margin-top: 18px;
+	text-transform: uppercase;
+}
+/*******Section - Form Content*******/
+section .homesolution-form-content{
+	width:980px;
+	margin: 0 auto;
+	padding-top:10px;
+}
+
+section .homesolution-form-subtitle{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-style: oblique;
+}

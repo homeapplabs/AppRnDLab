@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+		<class name="com.myhome.model.HealthCheckUp" 
+			table="healthcheckup" catalog="homemgmt">
+	        <id name="healthcheckupID" type="java.lang.Long">
+	            <column name="healthcheckup_id" />
+	        </id>
+	     
+	                         
+        <property name="healthcheckup" type="string">
+            <column name="healthcheckup_type" length="25" not-null="true" />
+        </property>
+                       
+        <property name="other" type="string">
+            <column name="other_loan" length="100" not-null="true" />
+        </property>
+                                                                          
+        <property name="duedate" type="date">
+            <column name="due_date" not-null="true" />
+        </property>
+              
+        <property name="makemeremind" type="string">
+            <column name="makemeremind" length="100" not-null="true" />
+        </property>
+        
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property> 
+        
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        <one-to-one name="stateCounty" class="com.myhome.model.StateCounty" cascade="all"></one-to-one>
+        
+        <one-to-one name="districtTown" class="com.myhome.model.District" cascade="all"></one-to-one>
+                
+        <many-to-one name="customer" class="com.myhome.model.Customer" cascade="all" not-null="true"></many-to-one>
+                
+        </class>
+</hibernate-mapping>
+        
+                
+        
+      
+		

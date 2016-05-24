@@ -1,0 +1,122 @@
+/*@import url('http://fonts.googleapis.com/css?family=Lato');*/
+.buttondemoBasicUsage section {
+    background: #f7f7f7;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px; }
+.buttondemoBasicUsage md-content {
+    margin-right: 7px; }
+.buttondemoBasicUsage section .md-button {
+    margin-top: 16px;
+    margin-bottom: 16px; }
+.buttondemoBasicUsage .label {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    font-size: 14px;
+    opacity: 0.54; }
+
+.md-button {
+    padding: 0 6px 0 6px;
+    margin: 6px 8px 6px 8px;
+    min-width: 88px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration:none;
+    border: none;
+    outline: none;
+}
+
+.md-button.md-raised:not([disabled]) {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+/* ---------------- */
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*sans-serif;*/
+    font-weight: normal;
+    margin: 10px;
+    color: #000000;
+    background-color: #b0b8ee;
+}
+
+form {
+    margin: 40px 0;
+}
+
+div {
+    clear: both;
+    margin: 0 50px;
+}
+
+label {
+    width: 180px;
+    border-radius: 3px;
+    /*border: 1px solid #D1D3D4*/
+    border: 1px solid #5392ad;
+}
+
+/* hide input */
+input.radio:empty {
+    margin-left: -999px;
+}
+
+/* style label */
+input.radio:empty ~ label {
+    position: relative;
+    float: left;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    margin-top: 2em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input.radio:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    /*background: #D1D3D4;*/
+    border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+    color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+    content:'\2714';
+    text-indent: .9em;
+    color: #9CE2AE;
+    background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+    /*color: #777;*/
+    color: black;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}

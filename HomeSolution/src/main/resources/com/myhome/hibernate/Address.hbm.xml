@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.myhome.model.Address" 
+			table="address" catalog="homemgmt">
+	        <id name="addressId" type="java.lang.Long">
+	            <column name="address_id" />
+	            <generator class="identity" />
+	        </id>
+		 
+		 <property name="addressLine1" type="string">
+	            <column name="address_line1" length="50" not-null="true" />
+	     </property>
+	     <property name="addressLine2" type="string">
+	            <column name="address_line2" length="50" not-null="true" />
+	     </property>
+	     <property name="postcode" type="string">
+	            <column name="postcode" length="12" not-null="true" />
+	     </property>
+	     <property name="status" type="boolean">
+                <column name="status" not-null="true" default="true"/>
+         </property> 
+        
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        <one-to-one name="stateCounty" class="com.myhome.model.StateCounty" cascade="all"></one-to-one>
+        
+        <one-to-one name="districtTown" class="com.myhome.model.District" cascade="all"></one-to-one>
+        
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+		<class name="com.myhome.model.PipedWaterSupplier" 
+			table="piped_Water_Supplier" catalog="homemgmt">
+	        <id name="pipedWaterSupplierCode" type="java.lang.Long">
+	            <column name="piped_water_supplier_code" />
+	        </id>
+	        
+	    <property name="pipedWaterSupplierName" type="string">
+            <column name="piped_water_supplier_name" length="25" not-null="true" />
+        </property> 
+                        
+      
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property> 
+        
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        <one-to-one name="stateCounty" class="com.myhome.model.StateCounty" cascade="all"></one-to-one>
+        
+        <one-to-one name="districtTown" class="com.myhome.model.District" cascade="all"></one-to-one>
+        
+        </class>
+</hibernate-mapping>
+        
+                
+        
+      
+			

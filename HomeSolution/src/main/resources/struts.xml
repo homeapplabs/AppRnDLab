@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources" value="ApplicationResources" />
+	<package name="default" namespace="/" extends="struts-default">
+
+		<result-types>
+         <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+        </result-types>
+        
+		<action name="addCustomerAction" class="customerAction" method="addCustomer">
+			<result name="success" type="tiles">customer-tiles</result>
+		</action>
+
+		<action name="listCustomerAction" class="customerAction"
+			method="listCustomer">
+			<result name="success" type="tiles">customer-tiles</result>
+		</action>
+
+		<action name="loginAction" class="loginAction" method="login">
+			<result name="success" type="tiles">home-tiles</result>
+		</action>
+		
+		<action name="logoutAction" class="logoutAction" method="logout">
+			<result name="success">login.jsp</result>
+		</action>
+
+		<action name="homeAction" class="homeAction" method="home">
+			<result name="success" type="tiles">home-tiles</result>
+		</action>
+		
+		<!--<action name="loginAction" class="loginAction" method="login">
+			<result name="success" >pages/Home.jsp</result>
+		</action>
+
+		<action name="homeAction" class="homeAction" method="home">
+			<result name="success" >pages/Home.jsp</result>
+		</action>-->
+		
+		<action name="contactAction" class="contactAction" method="contactUs">
+			<result name="success" type="tiles">contactus-tiles</result>
+		</action>
+
+		<action name="aboutUsAction" class="aboutUsAction" method="aboutUs">
+			<result name="success" type="tiles">aboutus-tiles</result>
+		</action>
+
+		<action name="registerAction" class="registerAction" method="customerRegistration">
+			<result name="success" type="tiles">customerregistration-tiles</result>
+		</action>
+		
+		<action name="personalAction" class="personalAction" method="loadPersonal">
+			<result name="success" type="tiles">personaldetails-tiles</result>
+		</action>
+		
+		<action name="forgotPasswordAction" class="forgotPasswordAction"
+			method="forgotPassword">
+			<result name="success" type="tiles">forgotpassword-tiles</result>
+		</action>
+		
+		<action name="billsAction" class="billsAction" method="addBill">
+			<result name="success" type="tiles">bills-tiles</result>
+		</action>
+		
+		<action name="paymentAction" class="paymentAction" method="addPayment">
+			<result name="success" type="tiles">payment-tiles</result>
+		</action>
+		
+		<action name="shoppingListAction" class="shoppingAction" method="addShopping">
+			<result name="success" type="tiles">shoppinglist-tiles</result>
+		</action>
+		<action name="shoppingAction" class="shoppingAction" method="addShopping">
+			<result name="success" type="tiles">shopping-tiles</result>
+		</action>
+		<!--<action name="shoppingListAction" class="shoppingAction" method="shoppingList">
+			<result name="success" >pages/ShoppingList.jsp</result>
+		</action>
+		--><action name="newpaperBillAction" class="newpaperBillAction" method="addNewspaperBill">
+			<result name="success" type="tiles">newspaperbill-tiles</result>
+		</action>
+		<action name="magzineBillAction" class="magzineBillAction" method="addMagzineBill">
+			<result name="success" type="tiles">magzinebill-tiles</result>
+		</action>
+		<action name="electricBillAction" class="electricBillAction" method="addElectricBill">
+			<result name="success" type="tiles">electricbill-tiles</result>
+		</action>
+		<action name="phoneMobileBillAction" class="phoneMobileBillAction" method="addPhoneMobileBill">
+			<result name="success" type="tiles">phoneMobilebill-tiles</result>
+		</action>
+		<action name="internetBillAction" class="internetBillAction" method="addInternetBill">
+			<result name="success" type="tiles">internetbill-tiles</result>
+		</action>
+		<action name="cookingGasBillAction" class="cookingGasBillAction" method="addCookingGasBill">
+			<result name="success" type="tiles">cookinggasbill-tiles</result>
+		</action>
+		<action name="pipedWaterSupplyBillAction" class="pipedWaterSupplyBillAction" method="addPipedWaterSupplyBill">
+			<result name="success" type="tiles">pipedwatersupplybill-tiles</result>
+		</action>
+		<action name="bottledWaterSupplyBillAction" class="bottledWaterSupplyBillAction" method="addBottledWaterSupplyBill">
+			<result name="success" type="tiles">bottledwatersupplybill-tiles</result>
+		</action>
+		<action name="milkSupplyBillAction" class="milkSupplyBillAction" method="addMilkSupplyBill">
+			<result name="success" type="tiles">milksupplbyill-tiles</result>
+		</action>
+		<action name="creditCardBillAction" class="creditCardBillAction" method="addCreditCardBill">
+			<result name="success" type="tiles">creditcardbill-tiles</result>
+		</action>
+		<action name="savingPolicyPremiumAction" class="savingPolicyPremiumAction" method="addSavingPolicyPremium">
+			<result name="success" type="tiles">savingpolicypremium-tiles</result>
+		</action>
+		<action name="insurancePremiumAction" class="insurancePremiumAction" method="addIsurancePremium">
+			<result name="success" type="tiles">insurancepremium-tiles</result>
+		</action>
+		<action name="loanPremiumAction" class="loanPremiumAction" method="addLoanPremium">
+			<result name="success" type="tiles">loanpremium-tiles</result>
+		</action>
+		<action name="serviceAction" class="serviceAction" method="addServiceBill">
+			<result name="success" type="tiles">service-tiles</result>
+		</action>
+		<action name="healthCheckUpAcion" class="healthCheckUpAcion" method="addHealthCheckUp">
+			<result name="success" type="tiles">healthcheckup-tiles</result>
+		</action>
+		<action name="rwaChargesAction" class="rwaChargesAction" method="addRWACharges">
+			<result name="success" type="tiles">rwacharges-tiles</result>
+		</action>
+		<action name="tutionFeesAction" class="tutionFeesAction" method="addTutionFees">
+			<result name="success" type="tiles">tutionfees-tiles</result>
+		</action>
+		<action name="tvRechargeAction" class="tvRechargeAction" method="addTVRecharge">
+			<result name="success" type="tiles">tvrecharge-tiles</result>
+		</action>
+	</package>
+
+</struts>

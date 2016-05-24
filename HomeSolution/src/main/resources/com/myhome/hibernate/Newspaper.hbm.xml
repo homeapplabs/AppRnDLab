@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.myhome.model.Newspaper" 
+			table="newspaper" catalog="homemgmt">
+	        <id name="newspaperID" type="java.lang.Long">
+	            <column name="newspaper_id" />
+	        </id>
+	     <property name="newspaperName" type="string">
+            <column name="newspaper_name" length="25" not-null="true" />
+        </property> 
+        
+        <property name="month" type="int">
+            <column name="month_name" not-null="true" />
+        </property> 
+        
+        <property name="amount" type="int">
+            <column name="amount" not-null="true" />
+        </property>
+        
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property>
+        
+        <one-to-one name="newsAgency" class="com.myhome.model.NewsAgency" cascade="all"></one-to-one>
+        
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+         
+        <many-to-one name="customer" class="com.myhome.model.Customer" cascade="all" not-null="true"></many-to-one> 
+        
+        </class>
+</hibernate-mapping>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.myhome.model.CookingGas" 
+			table="cookinggas" catalog="homemgmt">
+	        <id name="cookinggasID" type="java.lang.Long">
+	            <column name="cookinggas_id" />
+	        </id>
+	        
+	    <!--property name="serviceprovider" type="string">
+            <column name="serviceprovider_name" length="25"  not-null="true" />
+         </property> -->
+        
+         <property name="connectionenumber" type="int">
+            <column name="connection_number" not-null="true" />
+        </property> 
+       
+        <property name="rateperunit" type="int">
+            <column name="rateperunit" not-null="true" />
+        </property> 
+        
+        <property name="unitconsumed" type="int">
+            <column name="unit_consumed" not-null="true" />
+        </property> 
+        
+         <property name="monthlyrental" type="int">
+            <column name="monthlyrental" not-null="true" />
+        </property> 
+        
+        <property name="previousreading" type="int">
+            <column name="previousreading" not-null="true" />
+        </property> 
+        
+        <property name="currentreading" type="int">
+            <column name="currentreading" not-null="true" />
+        </property> 
+                      
+        <property name="cookamount" type="int">
+            <column name="cook_amount" not-null="true" />
+        </property>
+        
+        <property name="duedate" type="date">
+            <column name="due_date" not-null="true" />
+        </property>
+        
+        <property name="other" type="string">
+            <column name="other_internet" length="100" not-null="true" />
+        </property> 
+        
+        <property name="makemeremind" type="string">
+            <column name="makemeremind" length="100" not-null="true" />
+        </property>
+        
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property>
+         
+        <one-to-one name="cookingGasSupplier" class="com.myhome.model.CookingGasSupplier" cascade="all"></one-to-one>
+
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        <one-to-one name="stateCounty" class="com.myhome.model.StateCounty" cascade="all"></one-to-one>
+        
+        <one-to-one name="districtTown" class="com.myhome.model.District" cascade="all"></one-to-one>
+        
+        <many-to-one name="customer" class="com.myhome.model.Customer" cascade="all" not-null="true"></many-to-one>
+        
+        </class>
+</hibernate-mapping>
+        
+                
+        
+       

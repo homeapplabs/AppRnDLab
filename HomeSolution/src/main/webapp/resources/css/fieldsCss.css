@@ -1,0 +1,17 @@
+.textfields{
+    background-color:cornflowerblue;
+
+    background-image:-webkit-linear-gradient(top, cornflowerblue, #5392ad);
+    background-image:-moz-linear-gradient(top, cornflowerblue, #5392ad);
+    background-image:linear-gradient(top, cornflowerblue, #5392ad);
+
+    box-shadow: 0 1px 1px #ccc;
+    border-radius:3px;
+    width: 290px;
+    padding: 10px;
+
+    /*position: absolute;
+    left:50%;
+    margin-left:-150px;
+    top: 80px;*/
+}

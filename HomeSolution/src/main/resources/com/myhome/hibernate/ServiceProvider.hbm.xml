@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+		<class name="com.myhome.model.ServiceProvider" 
+			table="service_provider" catalog="homemgmt">
+	        <id name="serviceProviderCode" type="java.lang.Long">
+	            <column name="service_provider_code" />
+	        </id>
+       <property name="serviceProviderName" type="string">
+            <column name="service_provider_name" length="100" not-null="true" />
+        </property>
+                                                                          
+       
+        <property name="status" type="boolean">
+            <column name="status" not-null="true" default="true"/>
+        </property> 
+        
+                
+        <one-to-one name="country" class="com.myhome.model.Country" cascade="all"></one-to-one>
+        
+        <one-to-one name="stateCounty" class="com.myhome.model.StateCounty" cascade="all"></one-to-one>
+        
+        </class>
+</hibernate-mapping>
+        
+                
+        
+      
+		

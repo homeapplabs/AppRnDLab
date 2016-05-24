@@ -1,0 +1,43 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<!-- Database Configuration -->
+	<import resource="config/spring/DataSource.xml"/>
+	<import resource="config/spring/HibernateSessionFactory.xml"/>
+ 
+	<!-- Beans Declaration -->
+	<import resource="com/myhome/spring/CustomerBean.xml"/>
+	<import resource="com/myhome/spring/LoginBean.xml"/>
+	<import resource="com/myhome/spring/HomeBean.xml"/>
+	<import resource="com/myhome/spring/ForgotPasswordBean.xml"/>
+	<import resource="com/myhome/spring/RegisterBean.xml"/>
+	<import resource="com/myhome/spring/BillsBean.xml"/>
+	<import resource="com/myhome/spring/PaymentBean.xml"/>
+	<import resource="com/myhome/spring/ShoppingBean.xml"/>
+	<import resource="com/myhome/spring/ContactBean.xml"/>
+	<import resource="com/myhome/spring/AboutUsBean.xml"/>
+ 	<import resource="com/myhome/spring/PersonalDetailsBean.xml"/>
+ 	<import resource="com/myhome/spring/NewspaperBean.xml"/>
+ 	<import resource="com/myhome/spring/MagzineBean.xml"/>
+ 	<import resource="com/myhome/spring/ElectricBean.xml"/>
+ 	<import resource="com/myhome/spring/PhoneMobileBillBean.xml"/>
+ 	<import resource="com/myhome/spring/InternetBillBean.xml"/>
+ 	<import resource="com/myhome/spring/CookingGasBillBean.xml"/>
+ 	<import resource="com/myhome/spring/PipedWaterSupplyBillBean.xml"/>
+ 	<import resource="com/myhome/spring/BottledWaterSupplyBillBean.xml"/>
+ 	<import resource="com/myhome/spring/PipedWaterSupplyBillBean.xml"/>
+ 	<import resource="com/myhome/spring/BottledWaterSupplyBillBean.xml"/>
+ 	<import resource="com/myhome/spring/MilkSupplyBillBean.xml"/>
+ 	<import resource="com/myhome/spring/CreditCardBillBean.xml"/>
+ 	<import resource="com/myhome/spring/SavingPolicyBean.xml"/>
+ 	<import resource="com/myhome/spring/InsuranceBean.xml"/>
+ 	<import resource="com/myhome/spring/LoanBean.xml"/>
+ 	<import resource="com/myhome/spring/ServiceBean.xml"/>
+ 	<import resource="com/myhome/spring/HealthCheckUpBean.xml"/>
+ 	<import resource="com/myhome/spring/RWAChargesBean.xml"/>
+ 	<import resource="com/myhome/spring/TutionFeesBean.xml"/>
+ 	<import resource="com/myhome/spring/TVRechargeBean.xml"/>
+ 	<import resource="com/myhome/spring/LogoutBean.xml"/>
+ 	</beans>
