@@ -21,3 +21,27 @@
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
+
+.inputdemoIcons {
+  /*
+.right-icon {
+  position: absolute;
+  top: 4px;
+  right: 2px;
+  left: auto;
+  margin-top: 0;
+}
+*/ }
+.inputIcon {
+    min-height: 48px; 
+    }
+  .inputdemo md-input-container:not(.md-input-invalid) > md-icon.email {
+    color: green; 
+    }
+  .inputdemo md-input-container:not(.md-input-invalid) > md-icon.name {
+    color: dodgerblue; 
+    }
+  .inputdemo md-input-container.md-input-invalid > md-icon.email,
+  .inputdemo md-input-container.md-input-invalid > md-icon.name {
+    color: red; 
+    }
