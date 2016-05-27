@@ -29,7 +29,7 @@
 
 			<div class="row form-group col-md-12" align="center">
 				<md-button class="md-raised md-primary" id="submit">Login</md-button>
-				<md-button class="md-raised">Register</md-button>
+				<a href="#/registration"><md-button class="md-raised">Register</md-button></a>
 				<a href=""> <label>Forgot Username/Password.</label></a>
 			</div>
 		</form>
