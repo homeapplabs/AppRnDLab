@@ -20,6 +20,7 @@
     <script src="/HomeSolution/resources/js/MyHomeApp.js"></script>
     <script src="/HomeSolution/resources/js/LoginController.js"></script>
     <script src="/HomeSolution/resources/js/RegistrationController.js"></script>
+    <script src="/HomeSolution/resources/js/TestController.js"></script>
     <%-- <script src="<c:url value="/resources/js/LoginController.js"/>" type="text/javascript"></script> --%>
 </head>
 <body ng-app="myHomeApp">

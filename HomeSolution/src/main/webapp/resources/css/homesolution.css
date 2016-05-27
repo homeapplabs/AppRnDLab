@@ -55,3 +55,9 @@ section .homesolution-form-subtitle{
 	font-size: 15px;
 	font-style: oblique;
 }
+
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
