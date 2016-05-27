@@ -19,6 +19,10 @@ mainApp.config(function($routeProvider) {
             templateUrl: '/HomeSolution/resources/pages/customerRegistration.jsp',
             controller: 'registrationController'
         })
+        .when('/test', {
+            templateUrl: '/HomeSolution/resources/pages/Test.jsp',
+            controller: 'testController'
+        })
         .otherwise({
             redirectTo: '/login'
         });

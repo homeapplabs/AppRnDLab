@@ -9,18 +9,18 @@
 						<md-input-container class="md-block"> 
 						<label>Username/Email</label>
 						<md-icon md-svg-src="/HomeSolution/resources/images/user.svg"></md-icon>
-						<input required type="text" name="username" id="username" />
-						<div ng-messages="loginForm.username.$error">
-							<div ng-message="required">Username/Email is required.</div>
+						<input required type="text" name="username" id="username-id" ng-model="username"/>
+						<div ng-messages="loginForm.username.$error" align="right">
+							<div ng-message="required">Username/Email is required</div>
 						</div>
 						</md-input-container>
 						
 						<md-input-container class="md-block"> 
 						<label>Password</label>
 						<md-icon md-svg-src="/HomeSolution/resources/images/password.svg" class="name">
-						</md-icon> <input required type="password" name="password" id="password">
-						<div ng-messages="loginForm.password.$error">
-							<div ng-message="required">Password is required.</div>
+						</md-icon> <input required type="password" name="password" id="password-id" ng-model="password"/>
+						<div ng-messages="loginForm.password.$error" align="right">
+							<div ng-message="required">Password is required</div>
 						</div>
 						</md-input-container>
 					</div>
