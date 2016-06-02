@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/HomeSolution/resources/css/icon.css"/>
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script> -->
     <script src="/HomeSolution/resources/js/angular.js"></script>
+    <script src="/HomeSolution/resources/js/jquery.min.js"></script>
     <script src="/HomeSolution/resources/js/angular-animate.js"></script>
     <script src="/HomeSolution/resources/js/angular-aria.js"></script>
     <script src="/HomeSolution/resources/js/angular-messages.js"></script>
@@ -21,6 +22,8 @@
     <script src="/HomeSolution/resources/js/LoginController.js"></script>
     <script src="/HomeSolution/resources/js/RegistrationController.js"></script>
     <script src="/HomeSolution/resources/js/TestController.js"></script>
+    <script src="/HomeSolution/resources/js/citiesController.js"></script>
+    <script src="/HomeSolution/resources/js/CountryController.js"></script>
     <%-- <script src="<c:url value="/resources/js/LoginController.js"/>" type="text/javascript"></script> --%>
 </head>
 <body ng-app="myHomeApp">

@@ -1,0 +1,106 @@
+[
+  {
+    "Name" : "Austin",
+    "Id" : "AUS"
+  },
+  {
+    "Name" : "Boston",
+    "Id" : "BOS"
+  },
+  {
+    "Name" : "Cancun",
+    "Id" : "CUN"
+  },
+  {
+    "Name" : "Chicago",
+    "Id" : "ORD"
+  },
+  {
+    "Name" : "Dallas/Love Field",
+    "Id" : "DAL"
+  },
+  {
+    "Name" : "Denver",
+    "Id" : "DEN"
+  },
+  {
+    "Name" : "Ft. Lauderdale",
+    "Id" : "FLL"
+  },
+  {
+    "Name" : "Honolulu",
+    "Id" : "HNL"
+  },
+  {
+    "Name" : "Las Vigas",
+    "Id" : "LAS"
+  },
+  {
+    "Name" : "Los Angeles",
+    "Id" : "LAX"
+  },
+  {
+    "Name" : "Los Cabos",
+    "Id" : "SJD"
+  },
+  {
+    "Name" : "Maui/Kahului",
+    "Id" : "OGG"
+  },
+  {
+    "Name" : "Neww York City",
+    "Id" : "NYC"
+  },
+  {
+    "Name" : "New York/Kennedy",
+    "Id" : "JFK"
+  },
+  {
+    "Name" : "New York/Laguardia",
+    "Id" : "LGA"
+  },
+  {
+    "Name" : "New York/New York",
+    "Id" : "EWR"
+  },
+  {
+    "Name" : "Orlando",
+    "Id" : "MCO"
+  },
+  {
+    "Name" : "Palm Springs",
+    "Id" : "PSP"
+  },
+  {
+    "Name" : "Portland",
+    "Id" : "PDX"
+  },
+  {
+    "Name" : "Puerto Vallarta",
+    "Id" : "PVR"
+  },
+  {
+    "Name" : "San Diego",
+    "Id" : "SAN"
+  },
+  {
+    "Name" : "San Francisco",
+    "Id" : "SFO"
+  },
+  {
+    "Name" : "Seattle",
+    "Id" : "SEA"
+  },
+  {
+    "Name" : "Washington DC",
+    "Id" : "WAS"
+  },
+  {
+    "Name" : "Washington/Dulles",
+    "Id" : "IAD"
+  },
+  {
+    "Name" : "Washington/National",
+    "Id" : "DCA"
+  }
+  ]

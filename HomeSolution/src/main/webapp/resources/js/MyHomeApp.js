@@ -24,7 +24,7 @@ mainApp.config(function($routeProvider) {
             controller: 'testController'
         })
         .otherwise({
-            redirectTo: '/login'
+            redirectTo: '/index'
         });
 });
 
