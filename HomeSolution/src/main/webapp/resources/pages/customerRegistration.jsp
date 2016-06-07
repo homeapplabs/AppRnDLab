@@ -1,5 +1,8 @@
 <section>
-<div align="right" class="header"><label>Registration Form</label></div>
+<br/>
+<br/>
+<div align="center" class="header"><label>Registration Form</label></div>
+<hr/>
 	<div class="homesolution-form-content" align="center">
 		<form name="registrationForm" data-toggle="validator" role="form"
 			enctype='application/json' align="center">
@@ -69,11 +72,51 @@
 					</div>
 					</md-input-container>
 				</div>
+				
+				<div class="form-group col-md-5" align="left">
+                    <md-input-container class="md-block">
+                        <label>Phone/Mobile</label>
+                        <input required type="number" name="phone_mobile" id="phone_mobile" ng-model="phoneMobile"/> 
+                        <div ng-messages="registrationForm.phone_mobile.$error" align="right">
+						<div ng-message="required">Phone/Mobile is required</div>
+					</div>
+                    </md-input-container>
+            </div>
+            
+             <div class="form-group col-md-5" align="left" ng-controller="dateCtlr">
+                    <md-datepicker ng-model="custDOB" ng-value="custDOB" id="custDOB_id" name="custDOB" md-max-date="custDOB" md-placeholder="DOB">
+                    </md-datepicker>
+                </div>
 				<!-- </section> -->
 			</div>
 			<div class="header" align="right"><label>Address Detail</label></div>
 			<hr/>	
 			<div ng-include="'/HomeSolution/resources/pages/Address.jsp'"></div>
+			
+			<div class="row">
+			<div class="form-group col-md-4" align="left">
+				<label>Prove that you are not Robot.</label>
+			</div>
+
+			<div class="form-group col-md-4" align="left">
+               <label>Verification Question {{VerificationMessage}}</label>
+            </div>
+            
+            <div class="form-group col-md-3" align="left" ng-controller="dateCtlr">
+               <md-datepicker id="date" name="date" ng-model="selectedDate" md-placeholder="Date" md-min-date="date" ng-required="required">
+                 <div ng-messages="userForm.selectedDate.$error">
+                   <div ng-message="required">Date is Required.</div>
+                 </div>
+               </md-datepicker> 
+            </div>
+		</div>
+		
+			<br/>
+			<div class="row form-group col-md-12" align="center">
+				<md-button class="md-raised md-primary" id="submit">Register me</md-button>
+				<a href="#/registration"><md-button class="md-raised">I Want to fill details again</md-button></a>
+				<!-- <a href=""> <label>Forgot Username/Password.</label></a> -->
+			</div>
 		</form>
 	</div>
 </section>
