@@ -28,6 +28,7 @@ mainApp.config(function($routeProvider) {
         });
 });
 
+var VerificationMessage="Select the required Date!!";
 /*mainApp.controller("mainCtrl", function($scope,$mdDialog){
     $scope.submitForm = function() {
 
@@ -59,19 +60,19 @@ mainApp.config(function($routeProvider) {
 
  mainApp.controller("dateCtlr", function($scope){
      $scope.myDate = new Date();
-     $scope.retDate;
+     /*$scope.retDate;
      $scope.depDate = new Date(
          $scope.myDate.getFullYear(),
          $scope.myDate.getMonth(),
-         $scope.myDate.getDate());
+         $scope.myDate.getDate());*/
 
      /*$scope.retDate = new Date(
          $scope.myDate.getFullYear(),
          $scope.myDate.getMonth(),
          $scope.myDate.getDate());*/
 
-     $scope.ppDOB = new Date(
-         $scope.myDate.getFullYear() - 12,
+     $scope.custDOB = new Date(
+         $scope.myDate.getFullYear() - 18,
          $scope.myDate.getMonth(),
          $scope.myDate.getDate());
  });
