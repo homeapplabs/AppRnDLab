@@ -8,20 +8,20 @@ mainApp.config(function($routeProvider) {
     $routeProvider.caseInsensitiveMatch=true;
     $routeProvider
         .when('/index', {
-            templateUrl: '/HomeSolution/resources/pages/Login.jsp',
+            templateUrl: '/HomeSolution/resources/pages/Login.html',
             controller: 'loginController'
         })
         .when('/login', {
-            templateUrl: '/HomeSolution/resources/pages/Login.jsp',
+            templateUrl: '/HomeSolution/resources/pages/Login.html',
             controller: 'loginController'
         })
         .when('/registration', {
-            templateUrl: '/HomeSolution/resources/pages/customerRegistration.jsp',
+            templateUrl: '/HomeSolution/resources/pages/customerRegistration.html',
             controller: 'registrationController'
         })
-        .when('/test', {
-            templateUrl: '/HomeSolution/resources/pages/Test.jsp',
-            controller: 'testController'
+        .when('/forgotPwd', {
+            templateUrl: '/HomeSolution/resources/pages/forgotPassword.html',
+            controller: 'forgotPwdController'
         })
         .otherwise({
             redirectTo: '/index'
