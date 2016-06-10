@@ -21,10 +21,11 @@
 				<div class="form-group col-md-5" align="center">
 					<md-input-container class="md-block"> <label>Email</label>
 					<!-- <md-icon md-svg-src="/HomeSolution/resources/images/user.svg"></md-icon> -->
-					<input required type="text" name="email" id="email-id" ng-model="email" />
+					<input required type="email" name="email" id="email-id" ng-model="email" ng-maxlength="50"/>
 					<div ng-messages="registrationForm.email.$error" align="right">
 						<div ng-message="required">Email is required.</div>
-						<div ng-message="email">Enter valid email.</div>
+						<div ng-message="email">Please enter valid email address.</div>
+						<div ng-message="maxlength">This field can be at most 50 characters long.</div>
 					</div>
 					</md-input-container>
 				</div>
@@ -74,10 +75,10 @@
 				<div class="form-group col-md-5" align="left">
                     <md-input-container class="md-block">
                         <label>Phone/Mobile</label>
-                        <input required type="number" name="phone_mobile" id="phone_mobile" ng-model="phoneMobile"/> 
+                        <input required type="tel" name="phone_mobile" id="phone_mobile" ng-model="phoneMobile"/> 
                         <div ng-messages="registrationForm.phone_mobile.$error" align="right">
-						<div ng-message="required">Phone/Mobile is required.</div>
-					</div>
+							<div ng-message="required">Phone/Mobile is required.</div>
+						</div>
                     </md-input-container>
             </div>
             
