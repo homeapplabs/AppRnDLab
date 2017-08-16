@@ -1,4 +1,10 @@
-var mainapp = angular.module("myModule", []);
+var mainapp = angular.module("myModule", ['ngMaterial'])
+.controller('AppCtrl', AppCtrl);
+
+function AppCtrl($scope) {
+    $scope.currentNavItem = 'page1';
+  }
+
 
 /*mainApp.config(function($routeProvider) {
     $routeProvider.caseInsensitiveMatch=true;
