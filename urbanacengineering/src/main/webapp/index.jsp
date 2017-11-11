@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link rel="stylesheet"
@@ -76,9 +79,14 @@
 	<hr/>
 <div class="row">
 	<a href="#!/home">Home</a>
-	<a href="#!/aboutus">About URBANAC</a>
-	<a href="#!/founder">Founder</a>
+	<a href="#!/buildings">Buildings</a>
+	<a href="#!/transportation">Transportation</a>
+	<a href="#!/contracting">Contracting</a>
+	<a href="#!/quantitysurveying">Quantity Surveying</a>
+	<a href="#!/projectmanagement">Project Management</a>
+	<a href="#!/dneservices">Design & Engineering Services</a>
 	<a href="#!/contactus">Contact</a>
+	<a href="#!/aboutus">About URBANAC</a>
 </div>
 <hr/>
 <div class="container">

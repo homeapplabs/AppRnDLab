@@ -9,9 +9,29 @@ var mainapp = angular.module("myModule", ['ngRoute'])
 		templateUrl: 'resources/pages/contactus.jsp',
 		controller: 'contactCtrl'
 	})
-	.when('/founder', {
-		templateUrl: 'resources/pages/founder.jsp',
-		controller: 'founderCtrl'
+	.when('/buildings', {
+		templateUrl: 'resources/pages/buildings.jsp',
+		controller: 'buildingsCtrl'
+	})
+	.when('/transportation', {
+		templateUrl: 'resources/pages/transportation.jsp',
+		controller: 'transportationCtrl'
+	})
+	.when('/contracting', {
+		templateUrl: 'resources/pages/contracting.jsp',
+		controller: 'contractingCtrl'
+	})
+	.when('/quantitysurveying', {
+		templateUrl: 'resources/pages/quantitysurveying.jsp',
+		controller: 'quantitysurveyingCtrl'
+	})
+	.when('/projectmanagement', {
+		templateUrl: 'resources/pages/projectmanagement.jsp',
+		controller: 'projectmanagementCtrl'
+	})
+	.when('/dneservices', {
+		templateUrl: 'resources/pages/dneservices.jsp',
+		controller: 'dneservicesCtrl'
 	})
 	.when('/aboutus', {
 		templateUrl: 'resources/pages/aboutus.jsp',
@@ -28,13 +48,24 @@ var mainapp = angular.module("myModule", ['ngRoute'])
 .controller('contactCtrl', function($scope){
 	
 })
-.controller('founderCtrl', function($scope){
+.controller('dneservicesCtrl', function($scope){
 	
 })
 .controller('aboutusCtrl', function($scope){
 	
+})
+.controller('buildingsCtrl', function($scope){
+	
+})
+.controller('transportationCtrl', function($scope){
+	
+})
+.controller('transportationCtrl', function($scope){
+	
+})
+.controller('projectmanagementCtrl', function($scope){
+	
 });
-
 function AppCtrl($scope) {
     $scope.currentNavItem = 'page1';
   }
